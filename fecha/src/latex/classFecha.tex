@@ -1,0 +1,72 @@
+\hypertarget{classFecha}{}\doxysection{Fecha Class Reference}
+\label{classFecha}\index{Fecha@{Fecha}}
+
+
+Clase fecha que permite crear objetos fecha. Además puede saber si un año es bisiesto y puede generar N fechas posteriores.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFecha_a7f5c8aa9f1fda0b063354ab40946c607}\label{classFecha_a7f5c8aa9f1fda0b063354ab40946c607}} 
+bool {\bfseries Is\+Leap\+Year} ()
+\item 
+\mbox{\Hypertarget{classFecha_a34c0968955c80b75a12048f500f32829}\label{classFecha_a34c0968955c80b75a12048f500f32829}} 
+int {\bfseries Get\+Day} ()
+\item 
+\mbox{\Hypertarget{classFecha_ac1f512146fd85aeb013d93ccc7499be6}\label{classFecha_ac1f512146fd85aeb013d93ccc7499be6}} 
+int {\bfseries Get\+Month} ()
+\item 
+\mbox{\Hypertarget{classFecha_aadfbb9b2bcbc9bf4b9b67c4d41745e73}\label{classFecha_aadfbb9b2bcbc9bf4b9b67c4d41745e73}} 
+int {\bfseries Get\+Year} ()
+\item 
+\mbox{\Hypertarget{classFecha_aba80bdbae472771ea565274f286ce032}\label{classFecha_aba80bdbae472771ea565274f286ce032}} 
+void {\bfseries Print} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFecha_a71b781cf547e2bd865ca1e703e5c1553}\label{classFecha_a71b781cf547e2bd865ca1e703e5c1553}} 
+int {\bfseries day\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classFecha_a0f21ca21a71d74c58e34c392e1ab4c1c}\label{classFecha_a0f21ca21a71d74c58e34c392e1ab4c1c}} 
+int {\bfseries month\+\_\+} \{\}
+\item 
+\mbox{\Hypertarget{classFecha_abfc0fbd78611de0052816e1ed00f1687}\label{classFecha_abfc0fbd78611de0052816e1ed00f1687}} 
+int {\bfseries year\+\_\+} \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classFecha_a1540616ed2d2824bb01680eec7ddde26}{Date\+Generator\+Func}} (\mbox{\hyperlink{classFecha}{Fecha}} \&today, const int \&repetitions, std\+::string Dates\+Data)
+\begin{DoxyCompactList}\small\item\em genera N fechas posteriores a la ingresada y lo guarda en un fichero .txt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase fecha que permite crear objetos fecha. Además puede saber si un año es bisiesto y puede generar N fechas posteriores. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classFecha_a1540616ed2d2824bb01680eec7ddde26}\label{classFecha_a1540616ed2d2824bb01680eec7ddde26}} 
+\index{Fecha@{Fecha}!DateGeneratorFunc@{DateGeneratorFunc}}
+\index{DateGeneratorFunc@{DateGeneratorFunc}!Fecha@{Fecha}}
+\doxysubsubsection{\texorpdfstring{DateGeneratorFunc}{DateGeneratorFunc}}
+{\footnotesize\ttfamily void Date\+Generator\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFecha}{Fecha}} \&}]{today,  }\item[{const int \&}]{repetitions,  }\item[{std\+::string}]{Dates\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+genera N fechas posteriores a la ingresada y lo guarda en un fichero .txt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em today} & objeto de la clase fecha del cual imprime en un documento txt las N fechas posteriores. \\
+\hline
+{\em repetitions} & la cantidad de veces que se repetirá el bucle. Una iteracion del bucle es una fecha posterior. \\
+\hline
+{\em docname} & nombre del fichero txt de salida \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+fechafunciones.\+cc\end{DoxyCompactItemize}
