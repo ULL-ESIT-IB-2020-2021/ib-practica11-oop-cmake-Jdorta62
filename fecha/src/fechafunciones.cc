@@ -4,7 +4,7 @@
   * Grado en Ingeniería Informática
   * Informática Básica
   *
-  * @file fechamain.cc
+  * @file fechafunciones.cc
   * @author Jose Dorta Luis alu0101414676@ull.edu.es
   * @date 06 Jan 2021
   * @brief El programa recibe por linea de comando: una fecha en el formato dd/mm/aa, un numero natural N, y el

@@ -32,4 +32,4 @@ add_executable(racionales
 
 target_compile_features(racionales PRIVATE cxx_std_14)
 
-#target_compile_options(racionales PRIVATE)
+target_compile_options(racionales PRIVATE -Wall -Wextra -Wpedantic)

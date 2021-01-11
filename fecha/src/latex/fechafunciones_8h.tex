@@ -1,0 +1,203 @@
+\hypertarget{fechafunciones_8h}{}\doxysection{fechafunciones.\+h File Reference}
+\label{fechafunciones_8h}\index{fechafunciones.h@{fechafunciones.h}}
+
+
+El programa recibe por linea de comando\+: una fecha en el formato dd/mm/aa, un numero natural N, y el nombre de un fichero de texto. El programa almacenará en el fichero de texto las N sigueintes fechas a la ingresada.  
+
+
+{\ttfamily \#include \char`\"{}fechafunciones.\+cc\char`\"{}}\newline
+Include dependency graph for fechafunciones.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{fechafunciones_8h_aeac332c082069f54e8769d311dd2049d}{Usage}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em indica al usuario como usar el programa. Una vez mostrado mensaje por pantalla, finaliza ejecución. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fechafunciones_8h_a291a52a02524a1d35d93b66eb9a22b9c}{Month31}} (int \&day, int \&month, int \&year)
+\begin{DoxyCompactList}\small\item\em soporta a la función Date\+Gerator\+Func. Esta función entra en escena cuando el mes en el que se esta calculando los días próximos tiene 31 dias \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fechafunciones_8h_a10d89b235b84175c78e26e7ab1a17d65}{Month30}} (int \&day, int \&month)
+\begin{DoxyCompactList}\small\item\em soporta a la función Date\+Gerator\+Func. Esta función entra en escena cuando el mes en el que se esta calculando los días próximos tiene 30 dias \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fechafunciones_8h_a81276cf2df041c99e0a2b3be0b170d71}{February\+Func}} (int \&day, int \&month, bool \&esbisiesto)
+\begin{DoxyCompactList}\small\item\em soporta a la función Date\+Gerator\+Func. Esta función entra en escena cuando el mes en el que se esta calculando los días próximos es febrero o el \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fechafunciones_8h_a1540616ed2d2824bb01680eec7ddde26}{Date\+Generator\+Func}} (\mbox{\hyperlink{classFecha}{Fecha}} \&today, const int \&repetitions, std\+::string Dates\+Data)
+\begin{DoxyCompactList}\small\item\em genera N fechas posteriores a la ingresada y lo guarda en un fichero .txt. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{fechafunciones_8h_ae56f2ef2327bcc75a65623266264cc74}{Day\+Converter}} (std\+::string fecha)
+\begin{DoxyCompactList}\small\item\em funcion que devuelve una string que contiene unicamente el dia del string fecha \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{fechafunciones_8h_a926e9a84b47919a76925f62369f8891a}{Month\+Converter}} (std\+::string fecha)
+\begin{DoxyCompactList}\small\item\em funcion que devuelve una string que contiene unicamente el mes del string fecha \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{fechafunciones_8h_a34ae1adc00a9f8ccfcd9470959e2585d}{Year\+Converter}} (std\+::string fecha)
+\begin{DoxyCompactList}\small\item\em funcion que devuelve una string que contiene unicamente el año del string fecha \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{fechafunciones_8h_a4c2d7b7eb83191f5e6d48a2ac6f36afb}{Integer\+Converter}} (std\+::string mystring)
+\begin{DoxyCompactList}\small\item\em funcion que transforma un un objeto string en un objeto int \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+El programa recibe por linea de comando\+: una fecha en el formato dd/mm/aa, un numero natural N, y el nombre de un fichero de texto. El programa almacenará en el fichero de texto las N sigueintes fechas a la ingresada. 
+
+Universidad de La Laguna Escuela Superior de Ingeniería y Tecnología Grado en Ingeniería Informática Informática Básica
+
+\begin{DoxyAuthor}{Author}
+Jose Dorta Luis \href{mailto:alu0101414676@ull.edu.es}{\texttt{ alu0101414676@ull.\+edu.\+es}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+06 Jan 2021 
+\end{DoxyDate}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]No hay bugs conocidos \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{fechafunciones_8h_a1540616ed2d2824bb01680eec7ddde26}\label{fechafunciones_8h_a1540616ed2d2824bb01680eec7ddde26}} 
+\index{fechafunciones.h@{fechafunciones.h}!DateGeneratorFunc@{DateGeneratorFunc}}
+\index{DateGeneratorFunc@{DateGeneratorFunc}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{DateGeneratorFunc()}{DateGeneratorFunc()}}
+{\footnotesize\ttfamily void Date\+Generator\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFecha}{Fecha}} \&}]{today,  }\item[{const int \&}]{repetitions,  }\item[{std\+::string}]{docname }\end{DoxyParamCaption})}
+
+
+
+genera N fechas posteriores a la ingresada y lo guarda en un fichero .txt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em today} & objeto de la clase fecha del cual imprime en un documento txt las N fechas posteriores. \\
+\hline
+{\em repetitions} & la cantidad de veces que se repetirá el bucle. Una iteracion del bucle es una fecha posterior. \\
+\hline
+{\em docname} & nombre del fichero txt de salida \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fechafunciones_8h_ae56f2ef2327bcc75a65623266264cc74}\label{fechafunciones_8h_ae56f2ef2327bcc75a65623266264cc74}} 
+\index{fechafunciones.h@{fechafunciones.h}!DayConverter@{DayConverter}}
+\index{DayConverter@{DayConverter}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{DayConverter()}{DayConverter()}}
+{\footnotesize\ttfamily std\+::string Day\+Converter (\begin{DoxyParamCaption}\item[{std\+::string}]{fecha }\end{DoxyParamCaption})}
+
+
+
+funcion que devuelve una string que contiene unicamente el dia del string fecha 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fecha} & un objeto de la clase string que sigue el siguiente formato dd/mm/aa del cual se quiere obtener el dia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fechafunciones_8h_a81276cf2df041c99e0a2b3be0b170d71}\label{fechafunciones_8h_a81276cf2df041c99e0a2b3be0b170d71}} 
+\index{fechafunciones.h@{fechafunciones.h}!FebruaryFunc@{FebruaryFunc}}
+\index{FebruaryFunc@{FebruaryFunc}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{FebruaryFunc()}{FebruaryFunc()}}
+{\footnotesize\ttfamily void February\+Func (\begin{DoxyParamCaption}\item[{int \&}]{day,  }\item[{int \&}]{month,  }\item[{bool \&}]{esbisiesto }\end{DoxyParamCaption})}
+
+
+
+soporta a la función Date\+Gerator\+Func. Esta función entra en escena cuando el mes en el que se esta calculando los días próximos es febrero o el 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & si el año es bisiesto, febrero tendrá 29 días. En caso contrario tendrá 28 dias. Cuando day iguala al februarylimit, se reinicia los dias y se aumenta month en una unidad. \\
+\hline
+{\em esbisiesto} & indicara si februarylimit será de 28 o 29 dias. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fechafunciones_8h_a4c2d7b7eb83191f5e6d48a2ac6f36afb}\label{fechafunciones_8h_a4c2d7b7eb83191f5e6d48a2ac6f36afb}} 
+\index{fechafunciones.h@{fechafunciones.h}!IntegerConverter@{IntegerConverter}}
+\index{IntegerConverter@{IntegerConverter}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{IntegerConverter()}{IntegerConverter()}}
+{\footnotesize\ttfamily int Integer\+Converter (\begin{DoxyParamCaption}\item[{std\+::string}]{mystring }\end{DoxyParamCaption})}
+
+
+
+funcion que transforma un un objeto string en un objeto int 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mystring} & cadena de caracteres numericos que se quiere transformar en un objeto int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fechafunciones_8h_a10d89b235b84175c78e26e7ab1a17d65}\label{fechafunciones_8h_a10d89b235b84175c78e26e7ab1a17d65}} 
+\index{fechafunciones.h@{fechafunciones.h}!Month30@{Month30}}
+\index{Month30@{Month30}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{Month30()}{Month30()}}
+{\footnotesize\ttfamily void Month30 (\begin{DoxyParamCaption}\item[{int \&}]{day,  }\item[{int \&}]{month }\end{DoxyParamCaption})}
+
+
+
+soporta a la función Date\+Gerator\+Func. Esta función entra en escena cuando el mes en el que se esta calculando los días próximos tiene 30 dias 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & si day != 30, el programa sumará en una unidad a dicha variable. Si day == 30, la funcion reinicará la variable day (day = 1) y aumentará en una unidad el mes. \\
+\hline
+{\em month} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fechafunciones_8h_a291a52a02524a1d35d93b66eb9a22b9c}\label{fechafunciones_8h_a291a52a02524a1d35d93b66eb9a22b9c}} 
+\index{fechafunciones.h@{fechafunciones.h}!Month31@{Month31}}
+\index{Month31@{Month31}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{Month31()}{Month31()}}
+{\footnotesize\ttfamily void Month31 (\begin{DoxyParamCaption}\item[{int \&}]{day,  }\item[{int \&}]{month,  }\item[{int \&}]{year }\end{DoxyParamCaption})}
+
+
+
+soporta a la función Date\+Gerator\+Func. Esta función entra en escena cuando el mes en el que se esta calculando los días próximos tiene 31 dias 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & si day != 31, el programa sumará en una unidad a dicha variable. Si day == 31 \&\& month != 12, la funcion reinicará la variable day (day = 1) y aumentará en una unidad el mes. Si day == 31 \&\& month == 12, reiniciará la variable day y month a 1 y aumentará en una unidad el año \\
+\hline
+{\em month} & \\
+\hline
+{\em year} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fechafunciones_8h_a926e9a84b47919a76925f62369f8891a}\label{fechafunciones_8h_a926e9a84b47919a76925f62369f8891a}} 
+\index{fechafunciones.h@{fechafunciones.h}!MonthConverter@{MonthConverter}}
+\index{MonthConverter@{MonthConverter}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{MonthConverter()}{MonthConverter()}}
+{\footnotesize\ttfamily std\+::string Month\+Converter (\begin{DoxyParamCaption}\item[{std\+::string}]{fecha }\end{DoxyParamCaption})}
+
+
+
+funcion que devuelve una string que contiene unicamente el mes del string fecha 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fecha} & un objeto de la clase string que sigue el siguiente formato dd/mm/aa del cual se quiere obtener únicamente el mes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fechafunciones_8h_aeac332c082069f54e8769d311dd2049d}\label{fechafunciones_8h_aeac332c082069f54e8769d311dd2049d}} 
+\index{fechafunciones.h@{fechafunciones.h}!Usage@{Usage}}
+\index{Usage@{Usage}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{Usage()}{Usage()}}
+{\footnotesize\ttfamily void Usage (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+indica al usuario como usar el programa. Una vez mostrado mensaje por pantalla, finaliza ejecución. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & numero de comandos pasados por linea de comando. \\
+\hline
+{\em argv} & vector char$\ast$ que contiene los parametros . \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fechafunciones_8h_a34ae1adc00a9f8ccfcd9470959e2585d}\label{fechafunciones_8h_a34ae1adc00a9f8ccfcd9470959e2585d}} 
+\index{fechafunciones.h@{fechafunciones.h}!YearConverter@{YearConverter}}
+\index{YearConverter@{YearConverter}!fechafunciones.h@{fechafunciones.h}}
+\doxysubsubsection{\texorpdfstring{YearConverter()}{YearConverter()}}
+{\footnotesize\ttfamily std\+::string Year\+Converter (\begin{DoxyParamCaption}\item[{std\+::string}]{fecha }\end{DoxyParamCaption})}
+
+
+
+funcion que devuelve una string que contiene unicamente el año del string fecha 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fecha} & un objeto de la clase string que sigue el siguiente formato dd/mm/aa del cual se quiere obtener únicamente el año de la misma \\
+\hline
+\end{DoxyParams}
