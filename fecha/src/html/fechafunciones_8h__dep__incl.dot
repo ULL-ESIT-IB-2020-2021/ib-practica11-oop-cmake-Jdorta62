@@ -6,7 +6,6 @@ digraph "fechafunciones.h"
   Node1 [label="fechafunciones.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="El programa recibe por linea de comando: una fecha en el formato dd/mm/aa, un numero natural N,..."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="fechafunciones.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fechafunciones_8cc.html",tooltip="El programa recibe por linea de comando: una fecha en el formato dd/mm/aa, un numero natural N,..."];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="fechamain.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fechamain_8cc.html",tooltip="El programa recibe por linea de comando: una fecha en el formato dd/mm/aa, un numero natural N,..."];
 }

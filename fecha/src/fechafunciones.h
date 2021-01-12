@@ -17,9 +17,25 @@
 #ifndef FECHA_FUNCIONES_H
 #define FECHA_FUNCIONES_H
 
-#include "fechafunciones.cc"
 
-class Fecha;
+
+class Fecha {
+ private:
+  int day_{};
+  int month_{};
+  int year_{};
+ public:
+  Fecha (int day, int month, int year);
+  bool IsLeapYear();
+  
+  int GetDay();
+  int GetMonth();
+  int GetYear();
+
+  void Print();
+
+  friend void DateGeneratorFunc(Fecha &today, const int &repetitions, std::string DatesData);
+};
 
 void Usage(int argc, char *argv[]);
 

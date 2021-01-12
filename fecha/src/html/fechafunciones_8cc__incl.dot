@@ -14,5 +14,4 @@ digraph "fechafunciones.cc"
   Node5 [label="cstdlib",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="fechafunciones.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$fechafunciones_8h.html",tooltip="El programa recibe por linea de comando: una fecha en el formato dd/mm/aa, un numero natural N,..."];
-  Node6 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

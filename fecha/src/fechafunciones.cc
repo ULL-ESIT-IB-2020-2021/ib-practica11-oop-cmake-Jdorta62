@@ -52,33 +52,33 @@ void Usage(int argc, char *argv[]) {
  *        y puede generar N fechas posteriores
 */
 
-class Fecha {
- public:
-  int day_{};
-  int month_{};
-  int year_{};
+Fecha::Fecha (int day, int month, int year) {
+  day_ = day;
+  month_ = month;
+  year_ = year;
+}
 
-  bool IsLeapYear() {
-    bool isleapyear{0};
-    if (year_ % 4 == 0 && year_ % 100 != 0){
-      isleapyear = 1;
-    }
-    if (year_ % 4 == 0 && year_ % 100 == 0 && year_ % 400 == 0) {
-      isleapyear = 1;
-    }
-    return isleapyear;
+bool Fecha::IsLeapYear() {
+  bool isleapyear{0};
+  if (year_ % 4 == 0 && year_ % 100 != 0){
+    isleapyear = 1;
   }
-  
-  int GetDay() {return day_;}
-  int GetMonth() {return month_;}
-  int GetYear() {return year_;}
-
-  void Print() {
-    std::cout << day_ << "/" << month_ << "/" << year_ << std::endl;
+  if (year_ % 4 == 0 && year_ % 100 == 0 && year_ % 400 == 0) {
+    isleapyear = 1;
   }
+  return isleapyear;
+}
 
-  friend void DateGeneratorFunc(Fecha &today, const int &repetitions, std::string DatesData);
-};
+int Fecha::GetDay() {return day_;}
+int Fecha::GetMonth() {return month_;}
+int Fecha::GetYear() {return year_;}
+
+void Fecha::Print() {
+  std::cout << day_ << "/" << month_ << "/" << year_ << std::endl;
+}
+
+
+
 
 /**
  * @brief soporta a la función DateGeratorFunc. Esta función entra en escena cuando el mes en el que se esta calculando
