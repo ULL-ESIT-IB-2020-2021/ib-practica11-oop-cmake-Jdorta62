@@ -14,7 +14,7 @@
   */
 
 #include <iostream>
-#include "complejo.cc"
+#include "complejo.h"
 
 /** @brief Funcion main
  *  @param[in] argc numero de parametros en linea de comandos.

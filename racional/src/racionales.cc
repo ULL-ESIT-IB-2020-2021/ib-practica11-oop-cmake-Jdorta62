@@ -17,7 +17,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "racional.cc" 
+#include "racional.h" 
 #include "funciones_racional.h"
 
 /** @brief Funcion main

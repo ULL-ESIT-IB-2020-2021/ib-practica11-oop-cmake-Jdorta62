@@ -16,7 +16,7 @@
 
 #include <iostream>
 #include <string>
-#include "fechafunciones.cc"
+#include "fechafunciones.h"
 
 /** @brief Funcion main
  *  @param[in] argc numero de parametros en linea de comandos.

@@ -16,7 +16,10 @@
 
 #include <iostream>
 #include <string>
+#include <fstream>
 
+#include "racional.h"
+#include "funciones_racional.h"
 
 /**
  * @brief indica al usuario como usar el programa. Una vez mostrado mensaje por pantalla, finaliza ejecución.
